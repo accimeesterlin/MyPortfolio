@@ -1,0 +1,302 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>myPortfolio</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <link rel="stylesheet" href="style/style.css">
+        <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+      </head>
+    <body>
+
+
+
+
+
+
+<!-- Header Bar that containes Menu Toggle Button and Links Buttons -->
+    <header class="header">
+      <div class="header--container">
+        <!-- Top Logo -->
+        <div class='header--container--logo'></div>
+
+
+        <!-- The Menu Toggle Button hidden for the desktop view -->
+        <div class="header--container--toggle">
+            <div class="menu-line"></div>
+            <div class="menu-line"></div>
+            <div class="menu-line"></div>
+        </div> <!-- end of toggle menu line -->
+
+
+          <div class="header--container--link__button">
+            <a href="#" onmouseover="scrollToAnchor('content'), down('5rem', '.content')" >Services</a>
+            <a href="#" onmouseover="scrollToAnchor('about--me'), down('5rem', '.aboutMe')" >About Me</a>
+            <a href="#" onmouseover="scrollToAnchor('achievement'), down('5rem', '.achievement--logo')" >Achievement</a>
+            <a href="#" onmouseover="scrollToAnchor('project'), down('5rem', '.project')">Project</a>
+            <a href="#" onmouseover="scrollToAnchor('skill'), down('5rem', '.skills')">Skills</a>
+            
+          </div> <!-- link_button --> 
+      </div> <!-- container -->
+    </header><!-- /header -->
+
+
+
+
+
+
+
+
+
+
+<!-- Web Developer Images and contents -->
+<section class="landing">
+  <h4 class="landing--header">Web Developer</h4>
+  <p class="landing--description">"Bring your brand to life for your customer."</p>
+  <a href="#services" class="landing--services">More services...</a>
+</section> <!-- Sect one ending div -->
+
+
+
+
+
+
+<!-- Services we offer and packages -->
+<a name = 'content' />
+<section class="content">
+
+  <div class="content--description">
+    <p>Services</p>
+  </div>
+
+  <div class="content--container" >
+
+    <div class="content--container--services">
+      <i class="ion-compose content--container--services--icon"></i>
+      <h3 class="content--container--services--header">Packages</h3>
+      <p class="content--container--services--description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident id velit, quisquam magnam facere suscipit, repudiandae aperiam, deleniti rerum ratione numquam! Adipisci nemo cumque ullam ad facere dolorum repellendus molestiae.</p>
+    </div> <!-- end of the div -->
+
+    <div class="content--container--services">
+      <i class="ion-folder content--container--services--icon"></i>
+      <h3 class='content--container--services--header'>Packages</h3>
+      <p class="content--container--services--description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos recusandae vero fugiat id, accusantium repellat ipsum nulla quam doloremque excepturi maxime adipisci error dolores doloribus, aspernatur? Earum optio, voluptates odio!</p>
+    </div> <!-- end of the div -->
+
+    <div class="content--container--services">
+      <i class="ion-cube content--container--services--icon"></i>
+      <h3 class="content--container--services--header">Packages</h3>
+      <p class="content--container--services--description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus culpa repudiandae consectetur at facilis provident. Provident iure blanditiis molestiae quos doloribus, aperiam repellendus autem ex officiis, dolore sed, consequatur aliquid!</p>
+    </div> <!-- end of the div -->
+  <!-- 
+    <div>
+      <i class="ion-ios-briefcase icon"></i>
+      <h3>Packages</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit asperiores tenetur illo deserunt voluptas, cupiditate cum minus magnam totam qui omnis ipsa, dicta excepturi. Suscipit quo, eligendi animi consequuntur minus.</p>
+    </div>  -->
+    </div>
+</section> <!-- subSection -->
+
+
+
+
+
+
+<!-- About me Section -->
+<a name = 'about--me' />
+<div class="border">
+<section class="aboutMe">
+  <h3 class="aboutMe--description">About me</h3>
+</section> <!-- Sect three ending div -->
+
+
+<section class="content--aboutMe">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt eos, ipsum numquam quos esse, ea facilis repellat architecto autem reprehenderit odio ut rem alias. Officia praesentium, ipsam. Quis, laudantium, voluptatibus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum optio amet, in quasi fugit aliquam illum illo nemo temporibus quos ut molestias quidem voluptatem dolorem quibusdam maxime, provident ducimus repellendus? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus fuga deleniti, delectus tempora totam hic, temporibus corporis vel aspernatur eaque asperiores animi, architecto culpa ea voluptate. Asperiores facilis rerum ipsa!</p>
+</section>
+</div>
+
+
+
+
+
+
+
+
+<!-- Achievements projects -->
+<a name = 'achievement' />
+<section class="achievement--logo">
+  <h3>Achievements</h3>
+  <p>This is where I achieve most of my skills</p>
+</section> <!-- Sect two ending div -->
+
+
+
+<section class="achievement">
+<img src="images/certification.jpg" class="achievement--image" alt="" id="images">
+
+  <div class="achievement--container">
+    <h3>Class attended</h3>
+    <ul class="achievement--container--list">
+      <li>Interractivity with Javascript (University of Michigan)</li>
+      <li>Web Development (Johns Hopkins University)</li>
+      <li>Free Code Camp Front End Development</li>
+      <li>Codacademy Javascript</li>
+      <li>Codeschool</li>
+    </ul>
+  </div> <!-- Second Main Container -->
+
+</section> <!-- subSection -->
+
+
+
+<a name = 'project' />
+<section class="project">
+  <h3>Projects I have worked on</h3>
+</section>
+
+
+<section class="porfolio">
+<!--   <div class="portfolio--link">
+    <a href="#">All</a>
+    <a href="#">Web Applications</a>
+    <a href="#">Assignments</a>
+    <a href="#">Non-Profit</a>
+  </div> -->
+
+<div class="portfolio--box">
+  <div class="portfolio--box--application second--app">
+     <div class="portfolio--box--application--header">
+    <h3>WikiPedia Search</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem dolore modi tenetur! Consequatur facilis beatae, deleniti accusantium id consectetur doloribus sed blanditiis possimus quidem quos reprehenderit ad enim officia culpa!</p>
+    </div> <!-- First div -->
+
+
+    <div class="portfolio--box--application--app"> 
+    <iframe src="http://codepen.io/accimeesterlin/full/rrwWNp/" frameborder="0" class="frame"></iframe>
+    </div> <!-- Second div -->
+
+  </div> <!-- First application -->
+
+
+<div class="portfolio--box--application first--app">
+    <div class="portfolio--box--application--header">
+      <h3>Weather App</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem dolore modi tenetur! Consequatur facilis beatae, deleniti accusantium id consectetur doloribus sed blanditiis possimus quidem quos reprehenderit ad enim officia culpa!</p>
+    </div> <!-- First div -->
+
+
+    <div class="portfolio--box--application--app"> 
+       <iframe src="http://codepen.io/accimeesterlin/full/BzbLoE/" frameborder="0" class="frame"></iframe>
+    </div> <!-- Second div -->
+
+  </div> <!-- Second application -->
+
+
+
+
+  <div class="portfolio--box--application ">
+    <div class="portfolio--box--application--header">
+      <h3>WikiPedia Search</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem dolore modi tenetur! Consequatur facilis beatae, deleniti accusantium id consectetur doloribus sed blanditiis possimus quidem quos reprehenderit ad enim officia culpa!</p>
+    </div> <!-- First div -->
+
+
+    <div class="portfolio--box--application--app"> 
+       <iframe src="http://codepen.io/accimeesterlin/full/BzbLoE/" frameborder="0" class="frame"></iframe>
+    </div> <!-- Second div -->
+
+  </div> <!-- Second application -->
+
+  </div> <!-- Portfolio Box-->
+
+</section>
+
+
+
+<a name = 'skill' />
+<section class="skills">
+  <h3 class="skills--header">Skills</h3>
+  <div class="skills--container">
+    <div class="skills--container--languages"> 
+      <div class="skills--container--languages--icons"><i class="ion-social-html5-outline"></i> </div>
+      <h3>HTML5</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere delectus esse ratione officiis. Numquam</p>
+    </div>
+
+    <div class="skills--container--languages"> 
+      <div class="skills--container--languages--icons"><i class="ion-social-css3"></i> </div>
+      <h3>CSS3</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere delectus esse ratione officiis. Numquam</p>
+    </div>
+
+
+    <div class="skills--container--languages"> 
+      <div class="skills--container--languages--icons"><i class="ion-social-sass"></i> </div>
+      <h3>Sass</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere delectus esse ratione officiis. Numquam</p>
+    </div>
+
+
+    <div class="skills--container--languages"> 
+      <div class="skills--container--languages--icons"><i class="ion-social-javascript"></i> </div>
+      <h3>Javascript</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere delectus esse ratione officiis. Numquam</p>
+    </div>
+
+
+    <div class="skills--container--languages"> 
+      <div class="skills--container--languages--icons"><i class="ion-social-angular"></i> </div>
+      <h3>Angular</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere delectus esse ratione officiis. Numquam</p>
+    </div>
+
+
+    <div class="skills--container--languages"> 
+      <div class="skills--container--languages--icons"><i class="ion-social-wordpress"></i> </div>
+      <h3>Wordpress</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere delectus esse ratione officiis. Numquam</p>
+    </div>
+
+
+    <div class="skills--container--languages"> 
+      <div class="skills--container--languages--icons"><i class="ion-social-chrome"></i> </div>
+      <h3>Chrome Developer</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere delectus esse ratione officiis. Numquam</p>
+    </div>
+
+
+    <div class="skills--container--languages"> 
+      <div class="skills--container--languages--icons"><i class="ion-social-nodejs"></i> </div>
+      <h3>Node.js</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere delectus esse ratione officiis. Numquam.</p>
+    </div>
+
+
+  </div>
+</section>
+
+
+<!-- The footer contents -->
+<footer class="footer">
+<!-- <div id="mail">
+<p>Send me a message</p>
+  <i class="ion-email"></i>
+</div> -->
+<h3>Thank you for visiting my Portfolio</h3>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum recusandae, labore temporibus id saepe tenetur obcaecati dolore, facere nemo maxime. Modi quibusdam rem velit quasi hic, quam reprehenderit cumque voluptatum.</p>
+<div class="footer--icons">
+  <a href="https://www.facebook.com/esterling.accime"> <i class="ion-social-facebook-outline" target="_blank"></i></a> <!-- Facebook Link to Profile -->
+  <a href="https://twitter.com/accimeesterlin?lang=en" target="_blank"> <i class="ion-social-twitter-outline"></i></a> <!-- Twitter link to Profile -->
+  <a href="https://www.linkedin.com/in/esterling-accime-324a4181?trk=nav_responsive_tab_profile_pic" target="_blank"> <i class="ion-social-linkedin-outline"></i></a>
+</div>
+  
+</footer>
+
+<!--     Footer is the next design -->
+      
+        <script src="./javascript.js"></script>
+        
+    </body>
+</html>

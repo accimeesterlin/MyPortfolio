@@ -1,0 +1,22 @@
+/*
+Resetting Browsers property*/
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+/*html, body{
+  height:100%;
+  width: 100%;
+}
+*/
+
+
+/*p, h1, h3, h4, h5, h6{
+  margin-top:20px;
+}*/
+
+/*p{
+  text-align: justify;
+}*/
