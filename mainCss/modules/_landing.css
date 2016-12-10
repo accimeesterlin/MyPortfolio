@@ -3,9 +3,17 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	height: 37rem;
+	height: 29rem;
 	margin-top: 5rem;
 	width: 100%;
+	@media (min-width: 850px){
+			height:33rem;
+			margin-top: 8rem;
+			border-radius: 5px;
+			width: auto;
+			margin-left: 6rem;
+			margin-right: 6rem;
+		}
 
 	background-image: -webkit-linear-gradient(
       rgba(0, 0, 0, 0.4),
@@ -13,6 +21,11 @@
     ), url('http://i50.photobucket.com/albums/f306/esterlinaccime/black1_zpsk7nczq7b.jpg');
 	background-size: cover;
 /*	border-bottom: 5px solid red;*/
+
+
+	@media(min-width: 1340px){
+		height: 45rem;
+	}
 
 	&--header{
 		font-weight: 100;

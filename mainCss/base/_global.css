@@ -1,3 +1,8 @@
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+
+
 /*
 Resetting Browsers property*/
 *{
@@ -6,17 +11,52 @@ Resetting Browsers property*/
     box-sizing: border-box;
 }
 
+
+
 /*html, body{
-  height:100%;
-  width: 100%;
+	background: linear-gradient(45deg, rgba(179,220,237,1) 0%, rgba(247,249,250,1) 31%, rgba(247,249,250,1) 68%, rgba(188,224,238,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b3dced', endColorstr='#bce0ee', GradientType=1 );
 }
 */
 
-
-/*p, h1, h3, h4, h5, h6{
-  margin-top:20px;
+/*body{
+	background-color: red;
 }*/
+a{
+	text-decoration: none;
+}
 
-/*p{
-  text-align: justify;
-}*/
+input{
+	padding:0.5rem;
+	outline: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

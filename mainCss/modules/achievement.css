@@ -2,17 +2,24 @@
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
+	position: relative;
 	background:linear-gradient(
 		rgba(0, 0, 0, 0.4),
-		rgba(0, 0, 0, 0.4)), url('http://i50.photobucket.com/albums/f306/esterlinaccime/one1_zpsvmr4pygo.jpg');
+		rgba(0, 0, 0, 0.4)), url('http://i50.photobucket.com/albums/f306/esterlinaccime/myPortfolio_zpsdsiuuss9.jpg');
 	background-size: cover;
 	align-items: center;
-	height:20rem;
-	margin:0.5rem;
+	height:15rem;
+	opacity: 1;
+	/*margin:0.5rem;*/
 	background-attachment: fixed;
+	@media (min-width: 730px){
+			width: auto;
+			margin-left: 6rem;
+			margin-right: 6rem;
+		}
 
 	@media (min-width: 730px){
-		height: 27rem;
+		height: 20rem;
 	}
 
 	& h3{
@@ -42,10 +49,31 @@
 	justify-content: space-around;
 	flex-direction: column;
 	align-items: center;
-	margin-top: 2rem;
-
+	/*font-family: "Open Sans";*/
+/*	margin-top: 2rem;*/
+/*    background: linear-gradient(45deg, rgba(179,220,237,1) 0%, rgba(247,249,250,1) 31%, rgba(247,249,250,1) 68%, rgba(188,224,238,1) 100%);
+  	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b3dced', endColorstr='#bce0ee', GradientType=1 );
+    
+*/
 	@media (min-width: 430px){
 		flex-direction: row;
+		
+	}
+	@media (min-width: 730px){
+			width: auto;
+			margin-left: 6rem;
+			margin-right: 6rem;
+		}
+
+
+	@media (min-width: 1200px){
+/*		margin:5rem;*/
+		padding:2rem;
+	}
+
+	@media (min-width: 1300px){
+		/*margin:5rem;*/
+		padding:5rem;
 	}
 
 
@@ -53,9 +81,10 @@
 		& h3{
 			margin-top: 2rem;
 			margin-left: 2rem;
+			/*font-family: "Open Sans";*/
 
 			@media (min-width: 730px){
-				font-size: 2rem;
+				font-size: 1.3rem;
 			}
 		}
 
@@ -63,14 +92,15 @@
 			li{
 				margin-top:1.2rem;
 				margin-left: 2.5rem;
+				margin-bottom: 0.9rem;
 
 				@media (min-width: 730px){
-					font-size: 1.3rem;
+					font-size: 0.9rem;
 				}
 			}
 		}
 	}
-}
+}		
 
 img{
 	/*margin-right:3rem;
@@ -85,9 +115,20 @@ img{
 	}
 
 	@media (min-width: 730px){
-		width:30rem;
-		height:25rem;
+		width:19rem;
+		height:15rem;
+		margin:0.8rem;
 	}
+
+
+	@media (min-width: 1050px){
+		width:19rem;
+		height:15rem;
+		margin:1.8rem;
+
+	}
+
+
 }
 
 

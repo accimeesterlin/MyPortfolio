@@ -1,0 +1,383 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="Visit our website and discover what makes Good Samaritan Foundation, Haiti Mission one of the largest hunger relief and development organizations in Haiti">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Good Samaritan Foundation of Haiti, Inc.</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+        <link rel="stylesheet" href="style/style.css">
+        <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+        <link rel="stylesheet" href="Loader/fakeLoader.css">
+
+        <script type="text/javascript">CRISP_WEBSITE_ID = "45896384-555e-49ec-afb7-3d685888ce7b";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.im/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
+      </head>
+    <body >
+
+
+<div id="fakeLoader">
+</div>
+
+
+<div class="containerPop">
+  <button class='closePop'>X</button>
+  <div class="modal">
+    <h3>Let's connect!</h3>
+    <!-- <p class='paraPop'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos debitis doloribus ducimus fuga accusamus laboriosam, in. Et ea nulla, ducimus perspiciatis sit, voluptatum vitae aut qui voluptate amet, magnam dolore.</p> -->
+<div class="iconsPop">
+  <a href="https://www.facebook.com/esterling.accime"> <i class="ion-social-facebook-outline" target="_blank"></i></a> <!-- Facebook Link to Profile -->
+
+  <a href="https://twitter.com/accimeesterlin?lang=en" target="_blank"> <i class="ion-social-twitter-outline"></i></a> <!-- Twitter link to Profile -->
+
+  <a href="https://www.linkedin.com/in/esterling-accime-324a4181?trk=nav_responsive_tab_profile_pic" target="_blank"> <i class="ion-social-linkedin-outline"></i></a>
+
+
+  <a href="https://www.instagram.com/esterlinme/?hl=en" target="_blank"> <i class="ion-social-instagram-outline"></i></a>
+</div>
+  </div>
+</div>
+
+
+
+<!-- Header Bar that containes Menu Toggle Button and Links Buttons -->
+    <header class="header" >
+
+
+      <div class="header--container">
+        <!-- Top Logo -->
+        <div class='header--container--logo'></div>
+
+
+        <!-- The Menu Toggle Button hidden for the desktop view -->
+        <div class="header--container--toggle">
+            <div class="menu-line one third"></div>
+            <div class="menu-line two"></div>
+            <div class="menu-line three"></div>
+        </div> <!-- end of toggle menu line -->
+
+          <div class="header--container--link__button">
+
+           <ul>
+<!--                 <li>
+                <a href="#" onclick="scrollToAnchor('content'), down('5rem', '.content')" >Services</a>
+                </li> -->
+
+                <li>
+                <a href="#" onclick="scrollToAnchor('achievement'), down('5rem', '.achievement--logo')" >Achievements</a>
+                </li>
+
+
+                <li>
+                <a href="#" onclick="scrollToAnchor('project'), down('5rem', '.project')">Projects</a>
+                </li>
+
+
+                <li>
+                <a href="#" onclick="scrollToAnchor('skill'), down('5rem', '.skills')">Skills</a>
+                </li>
+
+
+                <li>
+                <a href="#" onclick="scrollToAnchor('about--me'), down('-5rem', '.aboutMe')" >Contact</a>
+                </li>
+            </ul>  
+          </div> <!-- link_button --> 
+      </div> <!-- container -->
+    </header><!-- /header -->
+
+
+<!--         <nav>      
+        </nav>
+        
+        
+        <div class="content">
+            <h1>This is content</h1>
+        </div>
+
+ -->
+
+
+
+
+<div id="mainContainer" ng-app='myPortfolio' ng-controller='portfolio'>
+
+
+<!-- Web Developer Images and contents -->
+<section class="landing">
+  <h4 class="landing--header">Web Developer</h4>
+  <p class="landing--description">"Bring your brand to life for your customers."</p>
+  <a href="#services" class="landing--services showBtn">Stay in touch with me</a>
+</section> <!-- Sect one ending div -->
+
+
+
+
+
+
+<!-- Services we offer and packages -->
+<a name = 'content' />
+<section class="content">
+
+<!--   <div class="content--description">
+    <p>Services</p>
+  </div> -->
+
+  <div class="content--container" >
+
+    <div class="content--container--services" ng-repeat='x in passion'>
+      <i class="{{x.icon}}content--container--services--icon"></i>
+      <h3 class="content--container--services--header">{{x.title}}</h3>
+      <p class="content--container--services--description">{{x.description}}</p>
+    </div> <!-- end of the div -->
+    </div>
+</section> <!-- subSection -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Achievements projects -->
+<a name = 'achievement' />
+<section class="achievement--logo">
+  <h3>Achievements</h3>
+</section> <!-- Sect two ending div -->
+
+
+
+<section class="achievement">
+<img src="http://i50.photobucket.com/albums/f306/esterlinaccime/Coursera%20WNYZUNDKL5HS_zpsuvvuxlfo.jpg" class="achievement--image" alt="" id="images">
+
+  <div class="achievement--container">
+    <h3>Classes Attended</h3>
+    <ul class="achievement--container--list">
+      <li ng-repeat='x in list'>{{x.education}}</li>
+    </ul>
+  </div> <!-- Second Main Container -->
+
+</section> <!-- subSection -->
+
+
+<a name = 'project' />
+<section class="test">
+<section class="project">
+  <h3>Projects I have worked on</h3>
+</section>
+
+
+
+<section class="porfolio">
+
+<!-- Zero box --> 
+  <div class="view view-fifth" ng-repeat='x in effect'>
+
+
+    <img  ng-src = '{{x.picture}}' alt="">
+   
+    
+
+    <h3>{{x.title}}</h3>
+    <p class="nice">{{x.description}}</p>
+
+    <div class="read--more">
+      <i ng-click = "count =+1 " class="love ion-ios-heart-outline" > {{x.likes + count}}</i>
+      <p class="view--more">
+      <a ng-href="{{x.links}}" target="_blank"> View Project</a>
+      </p>
+    </div>
+
+
+  </div>
+
+</section>
+
+</section>
+
+
+
+<a name = 'skill' />
+<section class="skills">
+  <h3 class="skills--header">Mastered Skillset</h3>
+  <div class="skills--container">
+
+    <div class="skills--container--languages" ng-repeat='x in list'> 
+      <div class="skills--container--languages--icons">
+      <i class="{{x.icon}}"></i> </div>
+      <h3>{{x.language}}</h3>
+<!--       <p>{{x.description}}</p> -->
+    </div>
+
+
+  </div>
+</section>
+
+</div>
+
+<!-- Contact me Page -->
+<!-- About me Section -->
+<a name = 'about--me' />
+
+<section class="contact" id="about--me">
+
+<div class="contact--personalInformation">
+  <h2>Personal Information</h2>
+
+  <div class="mainPersonal">
+    <h3>Name</h3>
+    <p>Esterling Accime</p>
+  </div>
+
+
+
+  <div class="mainPersonal">
+    <h3>Location</h3>
+    <p>Atlanta, GA</p>
+  </div>
+
+
+  <div class="mainPersonal">
+    <h3>Phone</h3>
+    <p>404-825-3444</p>
+  </div>
+
+  <div class="mainPersonal">
+    <h3>Email</h3>
+    <p>accimeesterlin@yahoo.com</p>
+  </div>
+
+
+
+</div>
+
+
+  <div class="contact--input">
+    <h3>Contact me</h3>
+    <form  action="form-to-email.php" method="POST">
+       
+       <p> Enter Name: <br><input type="text" name="name" placeholder="Enter your full name..."> </p><br>
+       
+      <p> Enter Email Address:  <br>  <input type="text" name="email" placeholder="Enter your email..."> </p> <br>
+       
+      <p> Enter Message: <br> <textarea name="message" placeholder="Enter your message..."></textarea></p> <br>
+       
+      <input type="submit" value="Send Form" class="submit" name='submit' method="post">
+    </form>
+  </div>
+
+
+
+</section>
+
+
+
+
+<!-- The footer contents -->
+<footer class="footer">
+
+<div class="footer--container">
+
+<div class="footer--container--myInfo">
+  <h3>Esterling Accime</h3>
+  <p>Bring your brand to life for your customers. </p>
+
+</div>
+
+<div class="footer--container--myInfo">
+  <h3>Download Resume</h3>
+  <a href="Esterling Accime Front End Developer.pdf" class="ion-ios-download-outline big"> English</a>
+
+</div>
+
+
+<div class="footer--container--myInfo">
+  <h3>Newsletter</h3>
+  <input type="text">
+
+</div>
+
+
+</div>
+
+
+
+<!-- icons container  -->
+<div class="footer--container--icons">
+  <a href="https://www.facebook.com/esterling.accime"> <i class="ion-social-facebook-outline" target="_blank"></i></a> <!-- Facebook Link to Profile -->
+
+  <a href="https://twitter.com/accimeesterlin?lang=en" target="_blank"> <i class="ion-social-twitter-outline"></i></a> <!-- Twitter link to Profile -->
+
+  <a href="https://www.linkedin.com/in/esterling-accime-324a4181?trk=nav_responsive_tab_profile_pic" target="_blank"> <i class="ion-social-linkedin-outline"></i></a>
+
+
+  <a href="https://www.instagram.com/esterlinme/?hl=en" target="_blank"> <i class="ion-social-instagram-outline"></i></a>
+</div>
+
+
+
+
+
+
+
+
+<!-- <p>© 2016 Esterling Accime</p> -->
+
+
+  
+</footer>
+
+<!--     Footer is the next design -->
+      
+        <script src="./javascript.js"></script>
+         <script src="./controller.js"></script>
+         <script src="Loader/fakeLoader.min.js"></script>
+
+         <script>
+           $('#fakeLoader').fakeLoader({
+            timeToHide:3000, //Time in milliseconds for fakeLoader disappear
+            zIndex:"9999",//Default zIndex
+            spinner:"spinner1",//Options: 'spinner1', 'spinner2', 'spinner3', 'spinner4', 'spinner5', 'spinner6', 'spinner7'
+            bgColor:"#2ecc71" //Hex, RGB or RGBA colors
+    
+           });
+
+
+
+         </script>
+        
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

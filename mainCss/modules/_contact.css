@@ -1,0 +1,83 @@
+.contact{
+	background:rgba(0, 0, 0, 0.3);
+	padding: 0.5rem;
+	margin-bottom: 0.5rem;
+/*	height: 20rem;*/
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	position: relative;
+
+	@media (min-width: 730px){
+		flex-direction: row;
+		justify-content: space-around;
+
+	}
+
+	&--personalInformation{
+		display: flex;
+		flex-direction: column;
+		margin-top: 2rem;
+
+		.mainPersonal{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+
+			h3{
+				margin:0.5rem;
+			}
+		}
+	}
+
+	 &--input{
+	 	margin-top: 3rem;
+
+	 	p{
+	 		margin-top: 0.5rem;
+	 	}
+
+	 	input, textarea{
+	 		width: 23rem;
+	 		height: 2rem;
+	 		border-radius: 4px;
+	 		outline: none;
+	 		padding:0.5rem;
+
+	 		@media(max-width: 360px){
+	 			width: 18rem;
+	 		}
+	 	}
+
+	 	textarea{
+	 		height: 10rem;
+	 		outline: none;
+	 	}
+
+	 	.submit{
+	 		width: auto;
+
+	 		@media(max-width: 360px){
+	 			width: auto;
+	 		}
+	 	}
+	 }
+
+	
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

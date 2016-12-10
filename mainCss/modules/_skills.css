@@ -3,10 +3,14 @@
 	justify-content: center;
 	flex-direction: column;
 	align-items: center;
+	position: relative;
 
 	&--header{
-		font-size: 3rem;
-		margin-top: 4rem;
+		font-size: 2rem;
+		margin-top: 2rem;
+		@media (min-width: 730px) {
+			font-size: 2.5rem;
+		}
 	}
 
 	&--container{
@@ -17,17 +21,24 @@
 		margin-top: 3rem;
 		/*border-radius: 50%;*/
 
+	@media (min-width: 1200px){
+		/*margin:2rem;*/
+/*		padding:5rem;*/
+		}
+
 		&--languages{
 			display: flex;
 			align-items: center;
 			width: 10.5rem;
-			height: 16rem;
+			height: 10rem;
 			flex-direction: column;
-			margin: 1rem;
+			margin: 0.8rem;
 
 			@media (min-width: 730px){
-				margin:2rem;
+				margin:0.9rem;
+				height: 12rem;
 			}
+			
 /*			background-color: grey;*/
 
 
@@ -39,8 +50,8 @@
 
 
 			&--icons{
-				width: 7rem;
-				height: 7rem;
+				width: 5rem;
+				height: 5rem;
 				display: flex;
 				justify-content: center;
 				align-items: center;
@@ -53,13 +64,14 @@
 				}
 
 				& i{
-					font-size: 4rem;
+					font-size: 2rem;
 					color: red;
 				}
 			}
 
 			& h3{
 				margin-top: 0.5rem;
+				text-align: center;
 			}
 
 			& p{

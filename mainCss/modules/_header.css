@@ -9,10 +9,14 @@
   height:100px;
   background: #fff;
   border-bottom: 5px solid red;
-  z-index:999;
+  z-index:5;
+
   @media (min-width: 730px){
     height: 120px;
+    padding: 2.5rem;
   }
+
+
 
 
   &--container{
@@ -21,36 +25,179 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-direction: row;
 
+    &--toggle{
+      width: 2rem;
+      cursor: pointer;
+      margin-right: 1.5rem;
+      position: relative;
+
+
+      .menu-line{
+        width: inherit;
+        height:0.4rem;
+        margin-top: 0.1rem;
+        border-radius: 4px;
+        background: red;
+
+
+        @media(min-width: 850px) {
+           margin-left: 0.5rem;
+           display: none;
+        }
+      }
+
+      .happy{
+        width: 0;
+        height: 0;
+        opacity: 0;
+        background-color: none;
+
+      }
+
+
+      .happy:before, .happy:after{
+        position:absolute;
+        content:'';
+        display: block;
+        width:2rem;
+        background-color: red;
+        height: 0.1rem;
+        left:0;
+/*        transition: all 5s ease-in;*/
+        
+
+      }
+
+      .happy:before{
+        top:50%;
+        transform:rotate(45deg);
+        
+      }
+
+      .happy:after{
+        top:50%;
+        transform:rotate(-45deg);
+      }
+
+      .hide{
+        opacity: 0;
+      }
+
+      .happy{
+        opacity: 1;
+      }
+
+
+
+
+
+    }
 
     &--logo{
-      @media (min-width: 414px){
         background-image: url(http://i50.photobucket.com/albums/f306/esterlinaccime/FullSizeRender_zpsy5mxa1wk.jpg);
         background-size: cover;
-        margin-left: 2rem;
-        width:5rem;
-        height:5rem;
+        margin-left: 0.6rem;
+        width:4rem;
+        height:4rem;
         border-radius:50%;
         box-shadow: 1px 4px 5px #000;
-      }
 
-      @media (min-width: 450px) {
-        margin-left: 2rem;
-      }
+        @media(min-width: 730px){
+          margin-left: 2rem;
+          width:5rem;
+          height:5rem;
+        }
+
     }
 
     &--link__button{
-      & a{
+      display: block;
+      position: fixed;
+      left:0;
+
+      @media (max-width: 850px) {
+        transform:translate3d(-200px, 0, 0);
+        transition: transform 0.4s ease;
+        }
+
+
+
+
+      @media (min-width: 850px) {
+        margin-right: 3rem;
+        display: block;
+        position: relative;
+
+      }
+
+      ul{
+        display: flex;
+        justify-content: center;
         text-decoration: none;
-        color:#000;
-        padding:0.5rem;
-        font-weight: 100;
-        font-size: 0.6rem;
-        transition: all .3s ease-in;
-        &:hover{
+        list-style-type:none;
+        flex-direction: column;
+        background-color: rgba(0, 0, 0, 0.7);
+
+        @media (max-width: 850px) {
+          padding: 2rem;
+          position: fixed;
+          margin-top: -18rem;
+          z-index: 99999;
+          height: 1000px;
+        }
+
+        @media (min-width: 850px){
+          flex-direction: row;
+          background: inherit;
+        }
+
+        li{
+          margin-top:1rem;
+
+        @media (max-width: 850px) {
+          margin-top: 1.5rem;
+        }
+        }
+
+
+        @media (min-width: 850px){
+          flex-direction: row;
+        }
+      & a{
+       
+
+        @media (max-width: 850px) {
+          text-decoration: none;
+          color:#fff;
+          font-weight: 100;
+          font-size: 1.2rem;
+        }
+
+        @media (min-width: 850px){
+          margin-right: 0.9rem;
+          text-decoration: none;
+          color:#000;
+          padding:0.5rem;
+          font-weight: 100;
+          font-size: 0.6rem;
+          transition: all .3s ease-in;
+          border-top:2px solid #e4e4e4;
+          box-shadow: 2px 3px 2px #e4e4e4;
+          border-radius: 1px;
+        }
+
+         &:hover{
+          border-top:2px solid red;
           color:red;
           border-bottom:1px solid red;
+
+          @media (max-width: 850px) {
+            border:none;
+          }
         }
+
 
         @media (min-width: 474px){
           font-size:0.9rem;
@@ -58,33 +205,36 @@
         }
 
 
-        @media (min-width: 730px){
+        @media (min-width: 850px){
           font-size:1.2rem;
 
-        }
+        }      
       }
     }
+    }
+
+
+
   }
 }
 
 
-@media (max-width: 615px){
+.active-nav .header--container--link__button {
+  transform: translate3d(0, 0, 0);
 
-  .header--container--logo{
-    display: none;
   }
+
+
+
+
+
+
+
+
+
   
-  .menu-line{
-    width: 2.5rem;
-    height:0.5rem;
-    background-color:red;
-    display: block;
-    margin-top: 0.2rem;
-    margin-left: 0.5rem;
-    border-radius: 4px;
-  }
 
-}
+
 
 
 
