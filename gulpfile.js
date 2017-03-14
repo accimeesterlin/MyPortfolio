@@ -37,14 +37,7 @@ gulp.task('watch', function(){
 		autoRefresh.reload();
 	});
 
-	// watch('App/containerTop.js', function(){
-	// 	autoRefresh.reload();
-	// });
 
-	// watch('App/random.js', function(){
-	// 	autoRefresh.reload();
-	// });
-	
 	watch('mainCss/**/*.css', function(){
 		gulp.start('cssInject');
 	});
