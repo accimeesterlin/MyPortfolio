@@ -18,6 +18,8 @@
     "gulp-postcss": "^6.3.0",
     "gulp-watch": "^4.3.11",
     "postcss-import": "^9.1.0",
+    "gulp-connect-php": "0.0.8",
+    "gulp-mamp": "0.0.5",
     "postcss-nested": "^1.0.0",
     "postcss-simple-vars": "^3.0.0",
     "vinyl-buffer": "^1.0.0",

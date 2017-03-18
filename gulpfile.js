@@ -82,7 +82,7 @@ gulp.task('watch', ['compiler'], function(){
 		autoRefresh.reload();
 	});
 
-	// Watching every single CSS files
+	
 	watch('mainCss/**/*.css', function(){
 		gulp.start('cssInject');
 	});
