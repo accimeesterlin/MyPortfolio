@@ -1,13 +1,16 @@
-.contact{
+
+
+
+ .contact{
+	width: 100%;
 	background:rgba(0, 0, 0, 0.3);
 	padding: 0.5rem;
 	margin-bottom: 0.5rem;
-/*	height: 20rem;*/
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
 	align-items: center;
-	position: relative;
+	margin-top: 3rem;
 
 	@media (min-width: 730px){
 		flex-direction: row;
@@ -18,7 +21,12 @@
 	&--personalInformation{
 		display: flex;
 		flex-direction: column;
-		margin-top: 2rem;
+		margin-top: 3rem;
+
+		@media (min-width: 730px){
+			margin-top: 0;
+
+		}
 
 		.mainPersonal{
 			display: flex;

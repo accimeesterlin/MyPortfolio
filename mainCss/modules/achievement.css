@@ -1,35 +1,19 @@
 .achievement--logo{
 	display: flex;
-	justify-content: center;
-	flex-direction: column;
 	position: relative;
-	background:linear-gradient(
-		rgba(0, 0, 0, 0.4),
-		rgba(0, 0, 0, 0.4)), url('http://i50.photobucket.com/albums/f306/esterlinaccime/myPortfolio_zpsdsiuuss9.jpg');
 	background-size: cover;
 	align-items: center;
-	height:15rem;
 	opacity: 1;
-	/*margin:0.5rem;*/
 	background-attachment: fixed;
-	@media (min-width: 730px){
-			width: auto;
-			margin-left: 6rem;
-			margin-right: 6rem;
-		}
-
-	@media (min-width: 730px){
-		height: 20rem;
-	}
+	margin-top: 5rem;
 
 	& h3{
 		font-weight: 100;
 		font-size: 2rem;
-		color:#fff;
 
 		@media (min-width: 730px){
-		font-size: 4rem;
-	}
+		font-size: 2.5rem;
+		}
 
 	}
 	& p{
@@ -49,50 +33,31 @@
 	justify-content: space-around;
 	flex-direction: column;
 	align-items: center;
-	/*font-family: "Open Sans";*/
-/*	margin-top: 2rem;*/
-/*    background: linear-gradient(45deg, rgba(179,220,237,1) 0%, rgba(247,249,250,1) 31%, rgba(247,249,250,1) 68%, rgba(188,224,238,1) 100%);
-  	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b3dced', endColorstr='#bce0ee', GradientType=1 );
-    
-*/
+
 	@media (min-width: 430px){
 		flex-direction: row;
+		flex-wrap: wrap;
 		
 	}
-	@media (min-width: 730px){
-			width: auto;
-			margin-left: 6rem;
-			margin-right: 6rem;
-		}
 
 
-	@media (min-width: 1200px){
-/*		margin:5rem;*/
-		padding:2rem;
-	}
 
-	@media (min-width: 1300px){
-		/*margin:5rem;*/
-		padding:5rem;
-	}
 
 
 	&--container{
-		& h3{
-			margin-top: 2rem;
-			margin-left: 2rem;
-			/*font-family: "Open Sans";*/
-
-			@media (min-width: 730px){
-				font-size: 1.3rem;
-			}
-		}
 
 		& ul{
 			li{
 				margin-top:1.2rem;
 				margin-left: 2.5rem;
 				margin-bottom: 0.9rem;
+				list-style: none;
+
+				span{
+					margin-right: 10px;
+					color: green;
+					font-size: 20px;
+				}
 
 				@media (min-width: 730px){
 					font-size: 0.9rem;
@@ -103,8 +68,7 @@
 }		
 
 img{
-	/*margin-right:3rem;
-	margin-left: 0.5rem;*/
+
 	width: 98%;
 	height: 20rem; 
 	margin:0.5rem;

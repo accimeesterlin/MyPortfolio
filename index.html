@@ -3,11 +3,17 @@
     <head>
         <meta charset="utf-8">
         <meta name="description" content="Visit our website and discover what makes Good Samaritan Foundation, Haiti Mission one of the largest hunger relief and development organizations in Haiti">
+        
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Good Samaritan Foundation of Haiti, Inc.</title>
+
+        <title>My Portfolio || Project </title>
+
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+
         <link rel="stylesheet" href="style/style.css">
+
         <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
         <link rel="stylesheet" href="Loader/fakeLoader.css">
 
@@ -15,6 +21,8 @@
       </head>
     <body >
 
+<div class="mainContainer">
+  
 
 <div id="fakeLoader">
 </div>
@@ -150,19 +158,34 @@
 <!-- Achievements projects -->
 <a name = 'achievement' />
 <section class="achievement--logo">
-  <h3>Achievements</h3>
+  <h3>Courses Taken</h3>
 </section> <!-- Sect two ending div -->
 
 
 
 <section class="achievement">
-<img src="http://i50.photobucket.com/albums/f306/esterlinaccime/Coursera%20WNYZUNDKL5HS_zpsuvvuxlfo.jpg" class="achievement--image" alt="" id="images">
+<!-- <img src="http://i50.photobucket.com/albums/f306/esterlinaccime/Coursera%20WNYZUNDKL5HS_zpsuvvuxlfo.jpg" class="achievement--image" alt="" id="images">
+ -->
+
+ <div class="achievement--container">
+   <ul>
+     <li> <span class="ion-ios-checkmark-outline"></span>  Georgia Tech Coding BootCamp </li>
+     <li><span class="ion-ios-checkmark-outline"></span>  Web Development ( Johns Hopkins - Coursera ) </li>
+     <li><span class="ion-ios-checkmark-outline"></span>  Free Code Camp</li>
+     <li><span class="ion-ios-checkmark-outline"></span>  Interactivity with JavaScript (University of Michigan - Coursera)</li>
+     <li><span class="ion-ios-checkmark-outline"></span>  CodeCademy - JavaScript, PHP, SQL, Jquery</li>
+   </ul>
+ </div>
 
   <div class="achievement--container">
-    <h3>Classes Attended</h3>
-    <ul class="achievement--container--list">
-      <li ng-repeat='x in list'>{{x.education}}</li>
-    </ul>
+   <ul>
+     <li><span class="ion-ios-checkmark-outline"></span>  Tree House</li>
+     <li><span class="ion-ios-checkmark-outline"></span>  Code School</li>
+     <li><span class="ion-ios-checkmark-outline"></span>  Sololearn</li>
+     <li><span class="ion-ios-checkmark-outline"></span>  W3schools - PHP, SQL, JavaScript, Boostrap, Jquery, Angular </li>
+     <li><span class="ion-ios-checkmark-outline"></span>  Lynda</li>
+   </ul>
+   
   </div> <!-- Second Main Container -->
 
 </section> <!-- subSection -->
@@ -178,26 +201,6 @@
 
 <section class="porfolio">
 
-<!-- Zero box --> 
-  <div class="view view-fifth" ng-repeat='x in effect'>
-
-
-    <img  ng-src = '{{x.picture}}' alt="">
-   
-    
-
-    <h3>{{x.title}}</h3>
-    <p class="nice">{{x.description}}</p>
-
-    <div class="read--more">
-      <i ng-click = "count =+1 " class="love ion-ios-heart-outline" > {{x.likes + count}}</i>
-      <p class="view--more">
-      <a ng-href="{{x.links}}" target="_blank"> View Project</a>
-      </p>
-    </div>
-
-
-  </div>
 
 </section>
 
@@ -221,7 +224,7 @@
   </div>
 </section>
 
-</div>
+
 
 <!-- Contact me Page -->
 <!-- About me Section -->
@@ -288,7 +291,7 @@
 
 <div class="footer--container--myInfo">
   <h3>Esterling Accime</h3>
-  <p>Bring your brand to life for your customers. </p>
+  <p>Programming has always been my passion, and it will always be. </p>
 
 </div>
 
@@ -324,9 +327,9 @@
 
 
 
+</div>
 
-
-
+</div>
 
 
 <!-- <p>© 2016 Esterling Accime</p> -->
@@ -339,7 +342,8 @@
       
         <script src="./javascript.js"></script>
          <script src="./controller.js"></script>
-         <script src="Loader/fakeLoader.min.js"></script>
+         <script type="text/javascript" src="build/app.js"></script>
+        <!--  <script src="Loader/fakeLoader.min.js"></script>
 
          <script>
            $('#fakeLoader').fakeLoader({
@@ -352,7 +356,7 @@
 
 
 
-         </script>
+         </script> -->
         
     </body>
 </html>

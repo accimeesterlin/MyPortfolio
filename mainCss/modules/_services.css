@@ -4,30 +4,7 @@
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  @media (min-width: 730px){
-      height: 30rem;
-  }
 
-
-
-  &--description{
-    color:red;
-    border:1px solid red;
-    padding:0.4rem;
-    border-radius: 4px;
-    width: 8rem;
-    text-align: center;
-    margin-top: 2rem;
-
-    @media (min-width: 730px){
-      width: 12rem;
-      padding: 0.8rem;
-    }
-
-    @media (min-width: 1496px){
-      margin-top:5rem;
-    }
-  }
 
   &--container{
     display: flex;
@@ -36,21 +13,6 @@
     align-content: center;
     position: relative;
 
-     @media (min-width: 730px){
-      margin:5rem;
-      margin-top: 1rem;
-    }
-
-
-    @media (min-width: 1200px){
-       margin:7rem;
-       margin-top: 1rem;
-    }
-
-    @media (min-width: 1400px){
-      /*margin:15rem;*/
-
-    }
 
     &--services{
       display: flex;
